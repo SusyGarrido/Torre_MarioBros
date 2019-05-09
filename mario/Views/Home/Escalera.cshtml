@@ -1,0 +1,19 @@
+@model List<string>
+    
+@foreach (var step in Model)
+    {
+         <div class="row" >
+        @foreach (var s in step)
+        {
+           
+            @if(s == '#')
+            {
+                <div class="brick"></div>
+            }
+            else
+            {
+                <div class="sky"></div>
+            }
+        }
+         </div>  
+    }
